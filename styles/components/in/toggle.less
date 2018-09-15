@@ -1,0 +1,52 @@
+/*  HTML demo
+<div class="in-toggle active">
+    <div class="in-toggle__toggler">
+        <a href="#">text</a>
+        <div class="in-toggle__toggler__icon">
+            <i class="svg svg-arrow"></i>
+        </div>
+    </div>
+    <div class="in-toggle__content">
+        toggle text
+    </div>
+</div>
+*/
+
+.in-toggle {
+
+    &__toggler {
+        position: relative;
+        padding-right: 40px;
+        cursor: pointer;
+
+        .in-toggle.active & {
+            margin-bottom: 15px;
+        }
+
+        &__icon {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 40px;
+            text-align: center;
+
+            transform: translateY(-50%);
+
+            .svg {
+                transform: rotate(90deg);
+
+                .in-toggle.active & {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+
+        .in-toggle.active & {
+            display: block;
+        }
+    }
+}

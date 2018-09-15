@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "description": "",
+    "private": true,
+    "preferGlobal": false,
+    "devDependencies": {
+        "autoprefixer": "^6.5.2",
+        "grunt-browser-sync": "^2.2.0",
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0",
+        "grunt-contrib-less": "^1.4.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-legacssy": "shopsys/grunt-legacssy#v0.4.0-with-grunt1-support",
+        "grunt-postcss": "^0.8.0",
+        "grunt-spritesmith": "^1.26.0",
+        "grunt-webfont": "^1.6.0",
+        "jit-grunt": "^0.10.0",
+        "time-grunt": "^1.4.0"
+    }
+}
